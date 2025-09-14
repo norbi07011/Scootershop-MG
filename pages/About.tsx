@@ -59,82 +59,58 @@ const About: React.FC = () => {
             <div className="container px-4 mx-auto space-y-16 sm:px-6 lg:px-8 sm:space-y-24">
                 
                 {/* Welcome Section */}
-                <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
-                    <div className="text-center lg:text-start">
+                <div className="grid items-center grid-cols-1 gap-8 md:gap-12 lg:grid-cols-2">
+                    <div className="text-center lg:text-start px-2">
                         <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">{t('about.welcome.title')}</h2>
                         <p className="mt-6 text-lg leading-8 text-gray-300">{t('about.welcome.text')}</p>
                     </div>
-                    <div className="flex justify-center">
-                        <div style={{ display: 'flex', gap: '40px' }}>
-                            <div className="logo-circle" style={{ width: '400px', height: '400px', borderRadius: '50%', overflow: 'hidden', boxShadow: '0 0 32px rgba(0,0,0,0.25)', border: '6px solid #222' }}>
-                                <img src="/images/scuter logo .jpg" alt="Scootershop MG bv logo" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-                            </div>
-                            <div className="logo-circle" style={{ width: '400px', height: '400px', borderRadius: '50%', overflow: 'hidden', boxShadow: '0 0 32px rgba(0,0,0,0.25)', border: '6px solid #222' }}>
-                                <img src="/images/SCUTER LOGO 2.png" alt="Scootershop MG bv logo 2" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-                            </div>
-                            <div className="flex items-center">
-                                <a
-                                    href="https://marrisgym.nl/"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="px-8 py-4 ml-4 font-bold text-white transition-all duration-300 rounded-full bg-gradient-to-r from-purple-600 to-pink-500 hover:scale-105 hover:shadow-[0_0_20px_rgba(219,39,119,0.7)]"
-                                >
-                                    marrisgym.nl
-                                </a>
-                            </div>
+                    <div className="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-10">
+                        <div className="logo-circle w-48 h-48 md:w-80 md:h-80 rounded-full overflow-hidden shadow-lg border-4 border-gray-800">
+                            <img src="/images/scuter logo .jpg" alt="Scootershop MG bv logo" className="w-full h-full object-cover" />
+                        </div>
+                        <div className="logo-circle w-48 h-48 md:w-80 md:h-80 rounded-full overflow-hidden shadow-lg border-4 border-gray-800">
+                            <img src="/images/SCUTER LOGO 2.png" alt="Scootershop MG bv logo 2" className="w-full h-full object-cover" />
+                        </div>
+                        <div className="flex items-center">
+                            <a
+                                href="https://marrisgym.nl/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="px-4 py-2 md:px-8 md:py-4 font-bold text-white transition-all duration-300 rounded-full bg-gradient-to-r from-purple-600 to-pink-500 hover:scale-105 hover:shadow-[0_0_20px_rgba(219,39,119,0.7)]"
+                            >
+                                marrisgym.nl
+                            </a>
                         </div>
                     </div>
                 </div>
 
                 {/* Values Section */}
-                <div className="py-16 bg-base-dark">
+                <div className="py-10 sm:py-16 bg-base-dark">
                     <div className="text-center">
                         <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">{t('about.values.title')}</h2>
                         {/* Ramka na zdjęcie RDW o kształcie blaszki */}
                         <div className="flex justify-center mt-8">
-                                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                                <div
-                                    style={{
-                                        width: '500px',
-                                        height: '300px',
-                                        padding: '16px',
-                                        overflow: 'hidden',
-                                        background: 'linear-gradient(135deg, #e2e8f0 60%, #cbd5e1 100%)',
-                                        boxShadow: '0 0 24px rgba(0,0,0,0.25)',
-                                        clipPath: 'polygon(10% 0%, 90% 0%, 100% 20%, 100% 80%, 90% 100%, 10% 100%, 0% 80%, 0% 20%)',
-                                        border: '4px solid #b0b0b0',
-                                        display: 'flex',
-                                        alignItems: 'center',
-                                        justifyContent: 'center',
-                                    }}
-                                >
+                            <div className="flex flex-col items-center w-full max-w-md">
+                                <div className="w-full aspect-[5/3] bg-gradient-to-br from-gray-200 to-gray-300 shadow-lg rounded-lg border-2 border-gray-400 flex items-center justify-center" style={{clipPath: 'polygon(10% 0%, 90% 0%, 100% 20%, 100% 80%, 90% 100%, 10% 100%, 0% 80%, 0% 20%)'}}>
                                     <img
                                         src="/images/RDW.jpg"
                                         alt="RDW certyfikat"
-                                        style={{
-                                            maxWidth: '100%',
-                                            maxHeight: '100%',
-                                            objectFit: 'contain',
-                                            borderRadius: 0,
-                                            background: '#fff',
-                                            display: 'block',
-                                            margin: 'auto',
-                                        }}
+                                        className="max-w-full max-h-full object-contain bg-white block mx-auto"
                                     />
                                 </div>
                                 <a
                                     href="https://www.rdw.nl/"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="mt-6 px-8 py-4 font-bold text-white transition-all duration-300 rounded-full bg-gradient-to-r from-purple-600 to-pink-500 hover:scale-105 hover:shadow-[0_0_20px_rgba(219,39,119,0.7)]"
+                                    className="mt-4 px-4 py-2 md:px-8 md:py-4 font-bold text-white transition-all duration-300 rounded-full bg-gradient-to-r from-purple-600 to-pink-500 hover:scale-105 hover:shadow-[0_0_20px_rgba(219,39,119,0.7)]"
                                 >
                                     www.rdw.nl
                                 </a>
-                                </div>
                             </div>
                         </div>
+                        </div>
                     </div>
-                    <div className="grid grid-cols-1 gap-8 mt-12 text-center md:grid-cols-3">
+                    <div className="grid grid-cols-1 gap-6 sm:gap-8 mt-8 sm:mt-12 text-center md:grid-cols-3">
                         <div className="p-8 border border-gray-700 rounded-lg">
                             <h3 className="text-xl font-semibold text-neon-red">{t('about.values.one')}</h3>
                         </div>
@@ -151,26 +127,26 @@ const About: React.FC = () => {
                 <GoogleReviewsWidget />
 
                 {/* Gallery Section */}
-                <div>
+                <div className="px-2">
                     <div className="text-center">
                         <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">{t('about.gallery.title')}</h2>
                         <p className="max-w-2xl mx-auto mt-4 text-lg text-gray-300">{t('about.gallery.subtitle')}</p>
                     </div>
-                    <div className="mt-8">
+                    <div className="mt-6 sm:mt-8">
                         <ImageSlider images={galleryImages} />
                     </div>
-                    <p className="mt-6 text-center text-gray-400">{t('about.gallery.more_brands')}</p>
+                    <p className="mt-4 sm:mt-6 text-center text-gray-400">{t('about.gallery.more_brands')}</p>
                 </div>
                 {/* Ramka na zdjęcie */}
-                    <div className="flex justify-center items-start gap-8 mt-12">
-                        <div className="w-full max-w-2xl p-2 overflow-hidden transition-all duration-300 border border-gray-700 rounded-lg hover:border-neon-blue hover:shadow-neon-blue">
+                    <div className="flex flex-col md:flex-row justify-center items-start gap-6 md:gap-8 mt-8 md:mt-12">
+                        <div className="w-full max-w-xs sm:max-w-md md:max-w-lg p-2 overflow-hidden transition-all duration-300 border border-gray-700 rounded-lg hover:border-neon-blue hover:shadow-neon-blue mx-auto">
                             <img 
                                 src="/images/Zdjecie 1 .jpg" 
                                 alt="Zdjęcie 1" 
                                 className="object-cover w-full h-auto rounded-md" 
                             />
                         </div>
-                        <div className="w-full max-w-sm">
+                        <div className="w-full max-w-xs sm:max-w-sm md:max-w-sm mx-auto">
                             <GoogleReviewsWidget />
                         </div>
                     </div>
