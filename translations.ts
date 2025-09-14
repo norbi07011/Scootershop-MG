@@ -12,13 +12,23 @@ const translations: Record<LanguageCode, Translations> = {
       slider: { title: "Een Glimp van Ons Werk", slide_road_desc: "Klaar voor de weg" }
     },
     services: {
-      title: 'Onze Diensten',
-      cta: 'Vraag offerte aan',
-      maintenance: { title: 'Onderhoud & Reparatie', description: 'Wij volgen een strikt proces: diagnose, offerte, reparatie met kwaliteitsonderdelen en een laatste controle om ervoor te zorgen dat uw scooter in topconditie is.' },
-      styling: { title: 'Styling & Accessoires', description: 'Personaliseer uw scooter! Wij bieden professioneel spuitwerk, wrapping, custom stickers, installatie van valbeugels en op maat gemaakte zadels.' },
-      trade: { title: 'Inkoop / Verkoop / Inruil', description: 'Wij kopen, verkopen en ruilen gebruikte scooters. Geef de volgende informatie door voor een snelle taxatie: model, bouwjaar, kilometerstand, eventuele problemen en duidelijke foto\'s.' },
-      export: { title: 'Export', description: 'Wij bieden volledige ondersteuning bij de verkoop en export van uw scooter naar het buitenland, inclusief alle benodigde documentatie.' },
-      slider: { slide_parts_title: "Kwaliteitsonderdelen", slide_parts_desc: "Wij gebruiken alleen de beste onderdelen voor reparaties." }
+        parts: {
+          alt: 'Quality Parts',
+          title: 'Quality Parts',
+          description: 'We only use the best parts for repairs.'
+        },
+        title: 'Onze Diensten',
+        cta: 'Vraag offerte aan',
+        parts: {
+          alt: 'Kwaliteitsonderdelen',
+          title: 'Kwaliteitsonderdelen',
+          description: 'Wij gebruiken alleen de beste onderdelen voor reparaties.'
+        },
+        maintenance: { title: 'Onderhoud & Reparatie', description: 'Wij volgen een strikt proces: diagnose, offerte, reparatie met kwaliteitsonderdelen en een laatste controle om ervoor te zorgen dat uw scooter in topconditie is.' },
+        styling: { title: 'Styling & Accessoires', description: 'Personaliseer uw scooter! Wij bieden professioneel spuitwerk, wrapping, custom stickers, installatie van valbeugels en op maat gemaakte zadels.' },
+        trade: { title: 'Inkoop / Verkoop / Inruil', description: 'Wij kopen, verkopen en ruilen gebruikte scooters. Geef de volgende informatie door voor een snelle taxatie: model, bouwjaar, kilometerstand, eventuele problemen en duidelijke foto\'s.' },
+        export: { title: 'Export', description: 'Wij bieden volledige ondersteuning bij de verkoop en export van uw scooter naar het buitenland, inclusief alle benodigde documentatie.' },
+        slider: { slide_parts_title: "Kwaliteitsonderdelen", slide_parts_desc: "Wij gebruiken alleen de beste onderdelen voor reparaties." }
     },
     about: {
       title: 'Over Ons',
@@ -44,6 +54,11 @@ const translations: Record<LanguageCode, Translations> = {
         service: 'Keuze service', 
         message: 'Bericht', 
         services: { 
+            parts: {
+              alt: 'Kwaliteitsonderdelen',
+              title: 'Kwaliteitsonderdelen',
+              description: 'Wij gebruiken alleen de beste onderdelen voor reparaties.'
+            },
           repair: 'Reparatie afspraak', 
           trade: 'Tweedehands scooter kopen/verkopen', 
           other: 'Overige' 
@@ -89,13 +104,23 @@ const translations: Record<LanguageCode, Translations> = {
       slider: { title: "A Glimpse of Our Work", slide_road_desc: "Ready for the road" }
     },
     services: {
-      title: 'Our Services',
-      cta: 'Request a quote',
-      maintenance: { title: 'Maintenance & Repair', description: 'We follow a strict process: diagnosis, quote, repair with quality parts, and a final check to ensure your scooter is in top condition.' },
-      styling: { title: 'Styling & Accessories', description: 'Personalize your scooter! We offer professional painting, wrapping, custom stickers, crash bar installation, and custom saddles.' },
-      trade: { title: 'Purchase / Sale / Trade-in', description: 'We buy, sell, and trade used scooters. Please provide the following information for a quick valuation: model, year, mileage, any issues, and clear photos.' },
-      export: { title: 'Export', description: 'We provide full support for the sale and export of your scooter abroad, including all necessary documentation.' },
-      slider: { slide_parts_title: "Quality Parts", slide_parts_desc: "We only use the best parts for repairs." }
+        parts: {
+          alt: 'Części Najwyższej Jakości',
+          title: 'Części Najwyższej Jakości',
+          description: 'Do napraw używamy tylko najlepszych części.'
+        },
+        title: 'Our Services',
+        cta: 'Request a quote',
+        parts: {
+          alt: 'Quality Parts',
+          title: 'Quality Parts',
+          description: 'We only use the best parts for repairs.'
+        },
+        maintenance: { title: 'Maintenance & Repair', description: 'We follow a strict process: diagnosis, quote, repair with quality parts, and a final check to ensure your scooter is in top condition.' },
+        styling: { title: 'Styling & Accessories', description: 'Personalize your scooter! We offer professional painting, wrapping, custom stickers, crash bar installation, and custom saddles.' },
+        trade: { title: 'Purchase / Sale / Trade-in', description: 'We buy, sell, and trade used scooters. Please provide the following information for a quick valuation: model, year, mileage, any issues, and clear photos.' },
+        export: { title: 'Export', description: 'We provide full support for the sale and export of your scooter abroad, including all necessary documentation.' },
+        slider: { slide_parts_title: "Quality Parts", slide_parts_desc: "We only use the best parts for repairs." }
     },
     about: {
       title: 'About Us',
@@ -121,6 +146,11 @@ const translations: Record<LanguageCode, Translations> = {
         service: 'Choice of service', 
         message: 'Message', 
         services: { 
+            parts: {
+              alt: 'Kaliteli Parçalar',
+              title: 'Kaliteli Parçalar',
+              description: 'Onarımlar için sadece en iyi parçaları kullanıyoruz.'
+            },
           repair: 'Repair appointment', 
           trade: 'Buy/sell second-hand scooter', 
           other: 'Other' 
@@ -166,13 +196,23 @@ const translations: Record<LanguageCode, Translations> = {
       slider: { title: "Çalışmalarımızdan Bir Kesit", slide_road_desc: "Yola çıkmaya hazır" }
     },
     services: {
-      title: 'Hizmetlerimiz',
-      cta: 'Teklif isteyin',
-      maintenance: { title: 'Bakım ve Onarım', description: 'Sıkı bir süreç izliyoruz: teşhis, teklif, kaliteli parçalarla onarım ve scooter\'ınızın en iyi durumda olduğundan emin olmak için son kontrol.' },
-      styling: { title: 'Tasarım ve Aksesuarlar', description: 'Scooter\'ınızı kişiselleştirin! Profesyonel boyama, kaplama, özel çıkartmalar, koruma demiri montajı ve özel seleler sunuyoruz.' },
-      trade: { title: 'Alım / Satım / Takas', description: 'İkinci el scooter alıyor, satıyor ve takas ediyoruz. Hızlı bir değerleme için lütfen şu bilgileri sağlayın: model, yıl, kilometre, varsa sorunlar ve net fotoğraflar.' },
-      export: { title: 'İhracat', description: 'Scooter\'ınızın yurtdışına satışı ve ihracatı için gerekli tüm belgeler dahil olmak üzere tam destek sağlıyoruz.' },
-      slider: { slide_parts_title: "Kaliteli Parçalar", slide_parts_desc: "Onarımlar için sadece en iyi parçaları kullanıyoruz." }
+        parts: {
+          alt: 'Качествени Части',
+          title: 'Качествени Части',
+          description: 'Използваме само най-добрите части за ремонти.'
+        },
+        title: 'Hizmetlerimiz',
+        cta: 'Teklif isteyin',
+        parts: {
+          alt: 'Kaliteli Parçalar',
+          title: 'Kaliteli Parçalar',
+          description: 'Onarımlar için sadece en iyi parçaları kullanıyoruz.'
+        },
+        maintenance: { title: 'Bakım ve Onarım', description: 'Sıkı bir süreç izliyoruz: teşhis, teklif, kaliteli parçalarla onarım ve scooter\'ınızın en iyi durumda olduğundan emin olmak için son kontrol.' },
+        styling: { title: 'Tasarım ve Aksesuarlar', description: 'Scooter\'ınızı kişiselleştirin! Profesyonel boyama, kaplama, özel çıkartmalar, koruma demiri montajı ve özel seleler sunuyoruz.' },
+        trade: { title: 'Alım / Satım / Takas', description: 'İkinci el scooter alıyor, satıyor ve takas ediyoruz. Hızlı bir değerleme için lütfen şu bilgileri sağlayın: model, yıl, kilometre, varsa sorunlar ve net fotoğraflar.' },
+        export: { title: 'İhracat', description: 'Scooter\'ınızın yurtdışına satışı ve ihracatı için gerekli tüm belgeler dahil olmak üzere tam destek sağlıyoruz.' },
+        slider: { slide_parts_title: "Kaliteli Parçalar", slide_parts_desc: "Onarımlar için sadece en iyi parçaları kullanıyoruz." }
     },
     about: {
       title: 'Hakkımızda',
@@ -198,6 +238,11 @@ const translations: Record<LanguageCode, Translations> = {
         service: 'Hizmet seçimi', 
         message: 'Mesaj', 
         services: { 
+            parts: {
+              alt: 'قطع غيار عالية الجودة',
+              title: 'قطع غيار عالية الجودة',
+              description: 'نحن نستخدم فقط أفضل قطع الغيار للإصلاحات.'
+            },
           repair: 'Onarım randevusu', 
           trade: 'İkinci el scooter al/sat', 
           other: 'Diğer' 
@@ -243,13 +288,18 @@ const translations: Record<LanguageCode, Translations> = {
       slider: { title: "Fragment Naszej Pracy", slide_road_desc: "Gotowy do drogi" }
     },
     services: {
-      title: 'Nasze Usługi',
-      cta: 'Poproś o wycenę',
-      maintenance: { title: 'Serwis i Naprawa', description: 'Działamy według ścisłej procedury: diagnoza, wycena, naprawa z użyciem wysokiej jakości części oraz końcowa kontrola, aby upewnić się, że Twój skuter jest w doskonałym stanie.' },
-      styling: { title: 'Styling i Akcesoria', description: 'Spersonalizuj swój skuter! Oferujemy profesjonalne malowanie, oklejanie, niestandardowe naklejki, montaż gmole oraz siedzenia na zamówienie.' },
-      trade: { title: 'Skup / Sprzedaż / Zamiana', description: 'Skupujemy, sprzedajemy i zamieniamy używane skutery. W celu szybkiej wyceny prosimy o podanie następujących informacji: model, rok, przebieg, ewentualne problemy oraz wyraźne zdjęcia.' },
-      export: { title: 'Eksport', description: 'Zapewniamy pełne wsparcie przy sprzedaży i eksporcie Twojego skutera za granicę, włączając w to całą niezbędną dokumentację.' },
-      slider: { slide_parts_title: "Części Najwyższej Jakości", slide_parts_desc: "Do napraw używamy tylko najlepszych części." }
+        title: 'Nasze Usługi',
+        cta: 'Poproś o wycenę',
+        parts: {
+          alt: 'Części Najwyższej Jakości',
+          title: 'Części Najwyższej Jakości',
+          description: 'Do napraw używamy tylko najlepszych części.'
+        },
+        maintenance: { title: 'Serwis i Naprawa', description: 'Działamy według ścisłej procedury: diagnoza, wycena, naprawa z użyciem wysokiej jakości części oraz końcowa kontrola, aby upewnić się, że Twój skuter jest w doskonałym stanie.' },
+        styling: { title: 'Styling i Akcesoria', description: 'Spersonalizuj swój skuter! Oferujemy profesjonalne malowanie, oklejanie, niestandardowe naklejki, montaż gmole oraz siedzenia na zamówienie.' },
+        trade: { title: 'Skup / Sprzedaż / Zamiana', description: 'Skupujemy, sprzedajemy i zamieniamy używane skutery. W celu szybkiej wyceny prosimy o podanie następujących informacji: model, rok, przebieg, ewentualne problemy oraz wyraźne zdjęcia.' },
+        export: { title: 'Eksport', description: 'Zapewniamy pełne wsparcie przy sprzedaży i eksporcie Twojego skutera za granicę, włączając w to całą niezbędną dokumentację.' },
+        slider: { slide_parts_title: "Części Najwyższej Jakości", slide_parts_desc: "Do napraw używamy tylko najlepszych części." }
     },
     about: {
       title: 'O Nas',

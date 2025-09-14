@@ -153,13 +153,13 @@ const About: React.FC = () => {
                 {/* Gallery Section */}
                 <div>
                     <div className="text-center">
-                        <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">Obsługiwane Marki</h2>
-                        <p className="max-w-2xl mx-auto mt-4 text-lg text-gray-300">Piaggio, Vespa, Yamaha, Honda, Kymco, Sym</p>
+                        <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">{t('about.gallery.title')}</h2>
+                        <p className="max-w-2xl mx-auto mt-4 text-lg text-gray-300">{t('about.gallery.subtitle')}</p>
                     </div>
                     <div className="mt-8">
                         <ImageSlider images={galleryImages} />
                     </div>
-                    <p className="mt-6 text-center text-gray-400">i wiele innych marek.</p>
+                    <p className="mt-6 text-center text-gray-400">{t('about.gallery.more_brands')}</p>
                 </div>
                 {/* Ramka na zdjęcie */}
                     <div className="flex justify-center items-start gap-8 mt-12">
