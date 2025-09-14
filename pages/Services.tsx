@@ -29,10 +29,11 @@ const Services: React.FC = () => {
     const { t } = useTranslations();
 
     const serviceImages = [
-        { src: '/images/Nasze Usługi Serwis i Naprawa.jpg', alt: t('services.maintenance.alt'), title: t('services.maintenance.title'), description: t('services.maintenance.description') },
-        { src: '/images/Nasze Usługi Skup Sprzedaż Zamiana.jpg', alt: t('services.trade.alt'), title: t('services.trade.title'), description: t('services.trade.description') },
-        { src: '/images/Nasze Usługi Eksport.png', alt: t('services.export.alt'), title: t('services.export.title'), description: t('services.export.description') },
-        { src: '/images/Nasze Usługi Stylizacja i akcesoria.png', alt: t('services.styling.alt'), title: t('services.styling.title'), description: t('services.styling.description') },
+        { src: '/images/Nasze Usługi Części Najwyższej Jakości.jpg', alt: t('services.parts.alt'), title: t('services.parts.title') },
+        { src: '/images/Nasze Usługi Serwis i Naprawa.jpg', alt: t('services.maintenance.alt'), title: t('services.maintenance.title') },
+        { src: '/images/Nasze Usługi Skup Sprzedaż Zamiana.jpg', alt: t('services.trade.alt'), title: t('services.trade.title') },
+        { src: '/images/Nasze Usługi Eksport.png', alt: t('services.export.alt'), title: t('services.export.title') },
+        { src: '/images/Nasze Usługi Stylizacja i akcesoria.png', alt: t('services.styling.alt'), title: t('services.styling.title') },
     ];
 
     const servicesList = [
