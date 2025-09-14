@@ -123,8 +123,6 @@ const About: React.FC = () => {
                     </div>
                 </div>
 
-                {/* Google Reviews Section */}
-                <GoogleReviewsWidget />
 
                 {/* Gallery Section */}
                 <div className="px-2">
