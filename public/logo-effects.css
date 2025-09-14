@@ -1,0 +1,8 @@
+.logo-circle {
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.logo-circle:hover {
+  box-shadow: 0 0 48px 0 #ff7e5f, 0 0 32px rgba(0,0,0,0.35);
+  transform: translateY(-12px) scale(1.05);
+  border-color: #ff7e5f;
+}
